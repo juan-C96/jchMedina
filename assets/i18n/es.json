@@ -1,0 +1,45 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "title": "Ingeniero Frontend Senior.",
+    "summary": "Me especializo en diseñar plataformas web de alto rendimiento.<br> Actualmente enfocado en arquitecturas escalables con <strong>Angular y TypeScript</strong>.",
+    "btnProjects": "Ver Proyectos",
+    "btnResume": "CV (PDF)",
+    "resumePath": "/assets/files/Desarrollador_Frontend_Juan_Carlos_Hernandez.pdf"
+  },
+  "projects": {
+    "title": "Proyectos Destacados",
+    "btnViewProject": "Ver Proyecto",
+    "btnSourceCode": "Código Fuente",
+    "btnShowMore": "Ver más proyectos",
+    "btnShowLess": "Ver menos",
+    "devUtils": {
+      "name": "Plataforma de Utilidades Dev",
+      "description": "Aplicación web client-side para desarrolladores frontend. Incluye herramientas para conversión de JSON a TypeScript, optimización de SVG y comparación de diferencias JSON."
+    },
+    "componentLib": {
+      "name": "Arquitectura UI Escalable",
+      "description": "Librería de componentes desacoplada diseñada para plataformas B2C de alto tráfico. Construida bajo estrictas guías de rendimiento."
+    }
+  },
+  "about": {
+    "title": "Sobre mí",
+    "p1": "¡Hola! Soy Juan Carlos, un Ingeniero de Software con más de 5 años de experiencia especializado en el ecosistema moderno de Angular y TypeScript.",
+    "p2": "Mi trayectoria me ha llevado a trabajar en plataformas B2C de alto tráfico y sistemas globales de comercio electrónico. Mi enfoque principal es la optimización del rendimiento y el diseño de arquitecturas de componentes desacopladas.",
+    "p3": "Cuando no estoy programando para la web, suelo explorar mecánicas de desarrollo de videojuegos (Unreal Engine) o disfrutar de RPGs tácticos.",
+    "skillsTitle": "Tecnologías con las que trabajo habitualmente:",
+    "showMore": "Show More",
+    "showLess": "Show Less"
+  },
+  "contact": {
+    "title": "¿Qué sigue?",
+    "heading": "Ponte en contacto",
+    "text": "Actualmente estoy buscando nuevas oportunidades en entornos corporativos multinacionales. Ya sea que tengas una propuesta, una pregunta o simplemente quieras saludar, mi bandeja de entrada siempre está abierta.",
+    "btn": "Enviar un mensaje"
+  }
+}
