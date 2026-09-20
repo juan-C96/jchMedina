@@ -12,6 +12,7 @@ interface Project {
   tech: string[];
   liveLink?: string;
   githubLink?: string;
+  externalLinks?: { label: string; url: string }[];
 }
 
 @Component({

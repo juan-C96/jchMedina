@@ -76,6 +76,13 @@
                 t('btnSourceCode')
               }}</a>
             }
+            @if (project.externalLinks) {
+              @for (link of project.externalLinks; track link.label) {
+                <a [href]="link.url" target="_blank" class="link-btn primary outline">{{
+                  link.label
+                }}</a>
+              }
+            }
           </div>
         </div>
       </article>

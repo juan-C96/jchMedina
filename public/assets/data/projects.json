@@ -1,13 +1,45 @@
 [
   {
+    "id": "enterprise-hospitality-ecosystem",
+    "title": "Enterprise UI Libraries & B2C Booking",
+    "description": "Colaboración en el desarrollo de motores de reserva corporativos de alto tráfico. Creación e implementación de arquitecturas frontend modulares, librerías de componentes UI compartidas y estrategias de optimización SSR para múltiples marcas.",
+    "images": ["assets/images/projects/work/work.png"],
+    "tags": ["Enterprise", "B2C", "SSR"],
+    "tech": ["Angular", "TypeScript", "RxJS", "NPM"],
+    "liveLink": "",
+    "githubLink": "",
+    "externalLinks": [
+      { "label": "TENT", "url": "https://tenthotels.com/es" },
+      { "label": "Alegria", "url": "https://www.alegria-hotels.com/es/" },
+      { "label": "Can Bordoy", "url": "https://www.canbordoy.com/es/" },
+      { "label": "SeaClub", "url": "https://www.seaclub.com/es" },
+      { "label": "Puro Group", "url": "https://purogroup.com/purohotels/es/home" }
+    ]
+  },
+  {
+    "id": "php-ui-integration",
+    "title": "Frontend Integration in PHP Environments",
+    "description": "Desarrollo de interfaces e integración de módulos UI en arquitecturas monolíticas basadas en PHP. Refactorización de comportamientos interactivos en el lado del cliente, maquetación avanzada (SCSS/HTML5) y mantenimiento evolutivo para optimizar la experiencia de usuario.",
+    "images": ["assets/images/projects/work/work-2.png"],
+    "tags": ["UI/UX Integration", "Legacy Modernization", "Maintenance"],
+    "tech": ["PHP", "JavaScript / ES6", "SCSS", "HTML5"],
+    "liveLink": "",
+    "githubLink": "",
+    "externalLinks": [
+      { "label": "Ona Hotels", "url": "https://www.onahotels.com/es/" },
+      { "label": "Petit Palace", "url": "https://www.petitpalace.com/es/" },
+      { "label": "Caprice Hotels", "url": "https://www.capricehotels.com/es/" }
+    ]
+  },
+  {
     "id": "devtools-hub",
     "title": "DevTools Hub",
     "description": "Aplicación web standalone para desarrolladores. Incluye conversores de JSON a TypeScript bidireccionales, optimizadores de SVG y constructores de robots.txt con internacionalización y procesamiento 100% en el cliente.",
     "images": [
-      "assets/images/projects/dev.png",
-      "assets/images/projects/dev-1.png",
-      "assets/images/projects/dev-2.png",
-      "assets/images/projects/dev-3.png"
+      "assets/images/projects/dev/dev.png",
+      "assets/images/projects/dev/dev-1.png",
+      "assets/images/projects/dev/dev-2.png",
+      "assets/images/projects/dev/dev-3.png"
     ],
     "tags": ["Open Source", "Tooling", "Client-Side"],
     "tech": ["Angular 17", "TypeScript", "SCSS"],
@@ -17,14 +49,14 @@
   {
     "id": "unidad-pastoral",
     "title": "Unidad Pastoral Community Platform",
-    "description": "Sitio web comunitario optimizado para rendimiento. Arquitectura basada en CMS con exportación de contenido a HTML/CSS estáticos, layouts de bloques modulares y despliegue automatizado en Vercel.",
+    "description": "Desarrollo integral de un sitio web comunitario orientado a la autogestión del cliente. Implementación mediante sistema de gestión de contenidos (CMS) con layouts modulares, personalización de estilos e integración de infraestructura de alojamiento en IONOS.",
     "images": [
       "assets/images/projects/parroquia/p1.png",
       "assets/images/projects/parroquia/p2.png",
       "assets/images/projects/parroquia/p3.png"
     ],
-    "tags": ["Jamstack", "Static Export", "Client Work"],
-    "tech": ["WordPress", "HTML/CSS", "Vercel", "GitHub"],
+    "tags": ["CMS", "Client Work", "End-to-End"],
+    "tech": ["WordPress", "CSS", "Web Hosting", "DNS"],
     "liveLink": "https://unidad-pastoral-santa-teresita-97czwskgfn.live-website.com/",
     "githubLink": ""
   }
