@@ -1,0 +1,49 @@
+<ng-container *transloco="let t; read: 'about'">
+  <section id="about" class="about-section">
+    <h2 class="section-title">
+      <span class="number">02.</span> {{ t('title') }}
+      <div class="line"></div>
+    </h2>
+
+    <div class="about-content" appScrollReveal>
+      <div class="about-text">
+        <p>{{ t('p1') }}</p>
+        <p>{{ t('p2') }}</p>
+        <p>{{ t('p3') }}</p>
+
+        <p class="skills-title">{{ t('skillsTitle') }}</p>
+        <ul class="skills-list">
+          @for (skill of mainSkills; track skill.name) {
+            <li class="skill-item">
+              <span class="skill-icon" [innerHTML]="skill.icon"></span>
+              {{ skill.name }}
+            </li>
+          }
+
+          @if (showMore) {
+            @for (skill of secondarySkills; track skill.name) {
+              <li class="skill-item reveal-item">
+                <span class="skill-icon" [innerHTML]="skill.icon"></span>
+                {{ skill.name }}
+              </li>
+            }
+          }
+        </ul>
+
+        <button class="btn-show-more" (click)="toggleShowMore()">
+          {{ showMore ? t('showLess') || 'Show Less' : t('showMore') || 'Show More' }}
+        </button>
+      </div>
+
+      <div class="about-image">
+        <div class="image-wrapper">
+          <img
+            src="/assets/images/photoProfile.png"
+            alt="Juan Carlos Hernández"
+            class="image-placeholder"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+</ng-container>

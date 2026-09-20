@@ -1,0 +1,122 @@
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background: rgba(15, 17, 21, 0.85);
+  backdrop-filter: blur(12px);
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+
+  .nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 max(5%, calc((100% - 1100px) / 2));
+  }
+
+  .logo {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--accent-color);
+    letter-spacing: 1px;
+    text-decoration: none;
+  }
+}
+
+.main-nav {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+
+  a {
+    color: var(--text-main);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+
+    .number {
+      color: var(--accent-color);
+      font-family: monospace;
+      margin-right: 0.3rem;
+      font-size: 0.85rem;
+    }
+
+    &:hover {
+      color: var(--accent-color);
+    }
+  }
+}
+
+.hamburger-btn {
+  display: none; /* Oculto por defecto en escritorio */
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 2000;
+}
+
+/* Responsividad (Móvil y Tablets) */
+@media (max-width: 768px) {
+  .hamburger-btn {
+    display: block;
+  }
+
+  .main-nav {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Oculto fuera de la pantalla */
+    width: 70vw;
+    height: 100vh;
+    background-color: var(--bg-color); /* Tu color oscuro de fondo */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    transition: right 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+    z-index: 1500;
+
+    &.open {
+      right: 0; /* Desliza el menú hacia adentro */
+    }
+
+    a {
+      font-size: 1.2rem; /* Enlaces más grandes en móvil */
+    }
+
+    .lang-switcher {
+      margin-top: 1rem;
+    }
+  }
+}
+
+.lang-switcher {
+  display: flex;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 0.2rem;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  button {
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    border-radius: 40px;
+    padding: 0.3rem 0.8rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: var(--text-main);
+    }
+    &.active {
+      background: var(--text-main);
+      color: var(--bg-color);
+    }
+  }
+}

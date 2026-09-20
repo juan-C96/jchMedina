@@ -1,0 +1,45 @@
+{
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "title": "Senior Frontend Engineer.",
+    "summary": "I specialize in building exceptional, high-performance web platforms.<br> Currently focused on scalable architecture using <strong>Angular & TypeScript</strong>.",
+    "btnProjects": "View Projects",
+    "btnResume": "Resume (PDF)",
+    "resumePath": "/assets/files/Frontend_Developer_Juan_Carlos_Hernandez.pdf"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "btnViewProject": "View Project",
+    "btnSourceCode": "Source Code",
+    "btnShowMore": "Show more projects",
+    "btnShowLess": "Show less",
+    "devUtils": {
+      "name": "Developer Utility Platform",
+      "description": "Client-side utility web application for frontend developers. Features include JSON-to-TypeScript conversion, SVG optimization, and JSON diff comparison."
+    },
+    "componentLib": {
+      "name": "Scalable UI Architecture",
+      "description": "Decoupled component library designed for high-traffic B2C platforms. Built with strict performance guidelines."
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "p1": "Hello! I'm Juan Carlos, a Software Engineer with over 5 years of experience specializing in the modern Angular ecosystem and TypeScript.",
+    "p2": "My journey has led me to work on high-traffic B2C platforms and global e-commerce systems, where I focus on performance optimization, decoupled component architectures, and delivering exceptional user experiences.",
+    "p3": "When I'm not architecting web platforms, I'm usually exploring game development mechanics (Unreal Engine) or enjoying tactical RPGs.",
+    "skillsTitle": "Here are a few technologies I've been working with recently:",
+    "showMore": "Ver más",
+    "showLess": "Ver menos"
+  },
+  "contact": {
+    "title": "What's Next?",
+    "heading": "Get In Touch",
+    "text": "I'm currently looking for new opportunities in multinational environments. Whether you have a question, a proposal, or just want to say hi, my inbox is always open. I'll get back to you as soon as possible!",
+    "btn": "Say Hello"
+  }
+}

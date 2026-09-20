@@ -1,0 +1,33 @@
+<ng-container *transloco="let t; read: 'hero'">
+  <section id="hero" class="hero">
+    <div class="content-wrapper" appScrollReveal>
+      <p class="greeting">{{ t('greeting') }}</p>
+
+      <h1 class="name">Juan Carlos Hernández.</h1>
+      <h2 class="title">{{ t('title') }}</h2>
+
+      <p class="summary" [innerHTML]="t('summary')"></p>
+
+      <div class="actions">
+        <a href="#projects" class="btn primary">
+          {{ t('btnProjects') }}
+          <svg
+            xmlns="http://www.w3.org/O/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+        <a [href]="t('resumePath')" target="_blank" class="btn secondary">{{ t('btnResume') }}</a>
+      </div>
+    </div>
+  </section>
+</ng-container>

@@ -1,0 +1,95 @@
+<section
+  id="projects"
+  class="projects-section"
+  appScrollReveal
+  *transloco="let t; read: 'projects'"
+>
+  <h2 class="section-title"><span class="number">02.</span> {{ t('title') }}</h2>
+
+  <div class="projects-list">
+    @for (project of visibleProjects(); track project.id) {
+      <article class="project-row">
+        <div class="project-image">
+          <div
+            class="slider-track"
+            #slider
+            (mousedown)="startDrag($event, slider)"
+            (mouseleave)="stopDrag()"
+            (mouseup)="stopDrag()"
+            (mousemove)="doDrag($event)"
+            (touchstart)="startDrag($event, slider)"
+            (touchend)="stopDrag()"
+            (touchmove)="doDrag($event)"
+          >
+            @if (project.images && project.images.length > 0) {
+              @for (img of project.images; track img) {
+                <div class="slide-wrapper">
+                  <div class="placeholder-slide fallback">
+                    <span class="logo-mark">JCH.</span>
+                    <span class="project-name">{{ project.title }}</span>
+                  </div>
+                  <img
+                    [src]="img"
+                    [alt]="project.title"
+                    draggable="false"
+                    class="slide-img"
+                    (error)="$event.target.style.display = 'none'"
+                  />
+                </div>
+              }
+            } @else {
+              <div class="placeholder-slide">
+                <span class="logo-mark">JCH.</span>
+                <span class="project-name">{{ project.title }}</span>
+              </div>
+            }
+          </div>
+        </div>
+
+        <div class="project-content">
+          <div class="tags-container">
+            @for (tag of project.tags; track tag) {
+              <span class="tag">{{ tag }}</span>
+            }
+          </div>
+
+          <h3 class="project-title">{{ project.title }}</h3>
+
+          <div class="project-description">
+            <p>{{ project.description }}</p>
+          </div>
+
+          <ul class="tech-stack">
+            @for (tech of project.tech; track tech) {
+              <li>{{ tech }}</li>
+            }
+          </ul>
+
+          <div class="project-links">
+            @if (project.liveLink) {
+              <a [href]="project.liveLink" target="_blank" class="link-btn primary">{{
+                t('btnViewProject')
+              }}</a>
+            }
+            @if (project.githubLink) {
+              <a [href]="project.githubLink" target="_blank" class="link-btn secondary">{{
+                t('btnSourceCode')
+              }}</a>
+            }
+          </div>
+        </div>
+      </article>
+    }
+  </div>
+
+  <!-- Botonera condicional: Solo aparece si hay más de 2 proyectos en total -->
+  @if (projects().length > 2) {
+    <div class="load-more-container">
+      @if (hasMore()) {
+        <button class="btn-load-more" (click)="showMore()">{{ t('btnShowMore') }}</button>
+      } @else {
+        <button class="btn-load-more" (click)="showLess()">{{ t('btnShowLess') }}</button>
+      }
+    </div>
+  }
+</section>
